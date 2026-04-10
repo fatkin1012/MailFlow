@@ -1,0 +1,3 @@
+[submodule "src/sdk"]
+	path = src/sdk
+	url = https://github.com/fatkin1012/MailFlow-SDK
