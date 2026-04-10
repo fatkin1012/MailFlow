@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/kanban/kanbanboard.tsx","./src/components/kanban/kanbancard.tsx","./src/components/kanban/kanbancolumn.tsx","./src/hooks/usekanban.ts","./src/sdk/authservice.ts","./src/sdk/mailservice.ts","./src/sdk/types.ts"],"version":"5.9.3"}
