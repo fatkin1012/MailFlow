@@ -56,11 +56,11 @@ npm run preview
 
 Azure AD 設定（必須）
 --
-1. 在 Azure 入口網站（https://portal.azure.com）以公司帳號登入。
-2. 前往 **Azure Active Directory → App registrations**。
+1. 在 Azure 入口網站（https://portal.azure.com）
+2. 前往 **Azure Active Directory → App registrations**
 3. 新增或選取你要使用的應用：
    - Redirect URI（平台：Single-page application）：`http://localhost:5173`
-   - 支援的帳戶類型：視需求選擇（通常為「此組織目錄中的帳戶」）。
+   - 支援的帳戶類型：視需求選擇（通常為「此組織目錄中的帳戶」）
 4. 在 API permissions 加上委派權限（Delegated permissions）：
    - `openid`, `profile`, `offline_access`
    - `User.Read`
@@ -75,13 +75,8 @@ Azure AD 設定（必須）
 
 常見問題
 --
-- AADSTS700016（Application not found）: 通常因為 `client_id` 是預設佔位字串或應用尚未在該租戶註冊；請確認你使用的是正確的 Application (client) ID，或請管理員在對應租戶註冊應用。
+- Application not found: 通常因為 `client_id` 是預設佔位字串或應用尚未在該租戶註冊；請確認你使用的是正確的 Application (client) ID，或請管理員在對應租戶註冊應用。
 - PowerShell 遇到 `npm.ps1` 被封鎖：在 PowerShell 使用 `npm.cmd` 代替 `npm`。這在公司 Windows 環境很常見。
-
-測試選項（當你無法在公司租戶註冊應用時）
---
-- 使用 Microsoft Graph Explorer（https://developer.microsoft.com/graph/graph-explorer）測試 Graph 查詢。
-- 註冊個人開發租戶（Microsoft 365 Developer Program）並在該租戶註冊應用用於本地開發。
 
 專案結構（重點）
 --
@@ -97,6 +92,4 @@ Azure AD 設定（必須）
 --
 請參閱專案根目錄的 `LICENSE` 檔案。
 
-聯絡
---
-若需 Azure 應用註冊協助，請聯絡你們的 Azure/IT 管理員；若是程式碼問題，請在倉庫中建立 issue。
+
